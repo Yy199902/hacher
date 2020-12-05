@@ -1,0 +1,15 @@
+spring:
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/order?characterEncoding=utf8&serverTimezone=GMT
+    username: root
+    password: 123456
+  activemq:
+    broker-url: tcp://127.0.0.1:6616
+    user: admin
+    password: admin
+    in-memory: false
+    pool:
+      max-connections: 10
+      idle-timeout: 30000
+mybatis:
+    mapperLocations: classpath:mapper/*.xml
