@@ -27,8 +27,8 @@ public class ConsumerQueue {
                 Event o = (Event) JSONObject.toBean(JSONObject.fromObject(content), Event.class);
                 payDao.add(o);
             }
-//            textMessage.acknowledge();
-            session.recover();
+            textMessage.acknowledge();
+//            session.recover();
         } catch (JMSException e) {
             System.out.println(e.getMessage());
             session.recover();
