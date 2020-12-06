@@ -6,4 +6,8 @@ import org.apache.ibatis.annotations.Mapper;
 @Mapper
 public interface PayDao {
     void add(Event event);
+
+    void updateByType(int i);
+
+    void updateTr(int i);
 }

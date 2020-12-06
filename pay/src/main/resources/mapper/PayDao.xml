@@ -4,4 +4,10 @@
     <insert id="add">
         insert into event values(#{event.id}, #{event.type})
     </insert>
+    <update id="updateByType">
+        update event set type = 3 where id = #{i}
+    </update>
+    <update id="updateTr">
+        update tr set type = 3 where id = #{i}
+    </update>
 </mapper>
